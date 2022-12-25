@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar and To-Do</title>
+</head>
+<body>
+  <h1>Calendar and To-Do</h1>
+  
+  <!-- Calendar -->
+  <h2>Calendar</h2>
+  <div id="calendar"></div>
+  
+  <!-- To-Do List -->
+  <h2>To-Do List</h2>
+  <form>
+    <label for="task">Task:</label><br>
+    <input type="text" id="task" name="task"><br>
+    <button type="button" onclick="addTask()">Add Task</button>
+  </form> 
+  <ul id="tasks"></ul>
+  
+  <script>
+    // Calendar
+    // TODO: Generate calendar HTML and add it to the calendar div
+    
+    // To-Do List
+    function addTask() {
+      // Get the task from the form
+      var task = document.getElementById('task').value;
+      
+      // Create a new list item to hold the task
+      var taskItem = document.createElement('li');
+      taskItem.innerHTML = task;
+      
+      // Append the task to the list
+      var tasksList = document.getElementById('tasks');
+      tasksList.appendChild(taskItem);
+      
+      // Clear the form
+      document.getElementById('task').value = '';
+    }
+  </script>
+</body>
+</html>
