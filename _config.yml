@@ -1,0 +1,27 @@
+title: "Architecture Notes"
+description: "Essays and patterns on software architecture, systems design, and decision records."
+author:
+  name: "Naveen"
+  email: "you@example.com"
+
+# Update these for your GitHub Pages site.
+url: "https://naveenalavilli.github.io"
+baseurl: ""
+
+theme: minima
+
+minima:
+  date_format: "%b %-d, %Y"
+
+plugins:
+  - jekyll-feed
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Keep the site lean for Pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
