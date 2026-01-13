@@ -1,24 +1,17 @@
-title: Naveen Alavilli
-email: your-email@example.com
+title: "Sanexal Architecture Notes"
+email: ""
 description: >-
-  Architecture notes, patterns, and practical trade-offs in modern software systems.
+  Architecture essays, system design notes, and software trade-off writeups.
 baseurl: ""
-url: "https://naveenalavilli.github.io"
+url: "https://sanexal.github.io"
 
-# GitHub Pages uses the minima theme by default; explicit theme keeps local builds consistent.
+# Build settings
 theme: minima
+plugins:
+  - jekyll-feed
 
 minima:
   skin: classic
 
-header_pages:
-  - about.md
-
-plugins:
-  - jekyll-feed
-
-# Build settings
-markdown: kramdown
-permalink: /:categories/:year/:month/:day/:title/
-include:
-  - assets
+# Optional: show excerpts on home page
+show_excerpts: true
