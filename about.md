@@ -1,7 +1,9 @@
 ---
 layout: page
-title: "About"
+title: About
 permalink: /about/
 ---
 
-This site captures software architecture notes, trade-offs, and patterns I encounter while building systems. Expect short essays, diagrams, and decision summaries.
+Hi, I'm Naveen. I write about software architecture, system design trade-offs, and pragmatic patterns for shipping reliable systems.
+
+If you're building distributed systems, APIs, or internal platforms, you'll find case-style notes and templates you can reuse.

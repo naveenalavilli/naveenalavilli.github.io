@@ -1,27 +1,22 @@
-title: "Architecture Notes"
-description: "Essays and patterns on software architecture, systems design, and decision records."
-author:
-  name: "Naveen"
-  email: "you@example.com"
-
-# Update these for your GitHub Pages site.
-url: "https://naveenalavilli.github.io"
+title: Naveen Alavilli
+email: your-email@example.com
+description: >-
+  Architecture notes, patterns, and practical trade-offs in modern software systems.
 baseurl: ""
+url: "https://naveenalavilli.github.io"
 
+# GitHub Pages uses the minima theme by default; explicit theme keeps local builds consistent.
 theme: minima
 
 minima:
-  date_format: "%b %-d, %Y"
+  skin: classic
+
+header_pages:
+  - about.md
 
 plugins:
   - jekyll-feed
 
 # Build settings
 markdown: kramdown
-permalink: /:categories/:title/
-
-# Keep the site lean for Pages
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
+permalink: /:categories/:year/:month/:day/:title/

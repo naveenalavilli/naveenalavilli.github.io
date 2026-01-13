@@ -1,22 +1,27 @@
 ---
 layout: post
 title: "Architecture Decision Records That Age Well"
-date: 2025-01-13 10:00:00 -0500
 categories: architecture
+tags: [adr, decisions, documentation]
 ---
 
-ADRs are only useful if they stay readable and explain *why* the decision was made.
+Architecture Decision Records (ADRs) are most useful when they capture the trade-offs that *felt risky* at the time.
+A good ADR is short, biased toward context, and explicit about what you are **not** doing.
 
-A small ADR template I like:
+## When to write an ADR
+- A decision changes the direction of a system or team.
+- The decision has a long half-life (months or years).
+- The decision has multiple plausible alternatives.
 
-1. **Context**: the problem, constraints, and time pressure.
-2. **Decision**: the final call in one sentence.
-3. **Options considered**: 2-4 alternatives with trade-offs.
-4. **Consequences**: what becomes easier, harder, or more expensive.
+## A lightweight ADR template
+1. **Context**: What is happening now? What constraints matter?
+2. **Decision**: What did we choose?
+3. **Alternatives**: What else was considered and why not?
+4. **Consequences**: What are the trade-offs we accept?
 
-Two practices make ADRs resilient:
+## Make ADRs durable
+- Link to telemetry or incident evidence when possible.
+- Avoid internal code names that expire quickly.
+- Revisit ADRs after 1-2 releases to confirm the decision still stands.
 
-- Keep them short and focused. One ADR per decision.
-- Link to follow-up ADRs when the decision changes.
-
-You should be able to scan an ADR in one minute and answer, "does this still hold?"
+ADRs are less about governance and more about preserving intent. That makes them powerful onboarding tools and a reliable map of architectural evolution.
